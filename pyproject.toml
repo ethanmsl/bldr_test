@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bldr"
+version = "0.1.0"
+description = ""
+authors = ["Ethan Skowronski-Lutz <33399972+ethanmsl@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "bldr", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.7"
+pyright = "^1.1.281"
+black = "^22.10.0"
+pytest = "^7.2.0"
+pdoc = "^12.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
