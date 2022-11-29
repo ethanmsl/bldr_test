@@ -20,3 +20,28 @@ pdoc = "^12.3.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.pyright]
+include = ["src"]
+exclude = [".venv",
+    "src/experimental",
+    "src/typestubs",
+  "**/__pycache__"
+]
+venvPath = "."
+venv = ".venv"
+
+typeCheckingMode = "strict"
+reportMissingImports = true
+reportMissingTypeStubs = true
+
+executionEnvironments = [
+  { root = "src" }
+]
+
+[tool.pytest.ini_options]
+# adds the following paths to pythonpath, specified relative to root dir
+pythonpath = [
+    "src",
+]
