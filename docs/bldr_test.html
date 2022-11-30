@@ -63,7 +63,38 @@ bldr_test    </h1>
 
 <h1 id="header">Header</h1>
 
-<p><a href="example.com">link</a></p>
+<p>Link: <a href="https://test.pypi.org/project/bldr-test/">bldr-test on TestPyPi</a></p>
+
+<p>use, install:</p>
+
+<div class="pdoc-code codehilite">
+<pre><span></span><code>pip3 list
+<span class="nb">echo</span>
+pip3 install -i https://test.pypi.org/simple/ bldr-test
+<span class="nb">echo</span>
+pip3 list
+</code></pre>
+</div>
+
+<p>use, run:</p>
+
+<div class="pdoc-code codehilite">
+<pre><span></span><code>python3 -m bldr_test
+</code></pre>
+</div>
+
+<p>use, uninstall:</p>
+
+<div class="pdoc-code codehilite">
+<pre><span></span><code>pip3 list
+<span class="nb">echo</span>
+pip3 uninstall bldr-test
+<span class="nb">echo</span>
+pip3 list
+</code></pre>
+</div>
+
+<p>(Note: <code>-</code> vs. <code>_</code> above intended.  Also note: the <code>echo</code> commands are merely for more legible output)</p>
 </div>
 
                         <input id="mod-bldr_test-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
