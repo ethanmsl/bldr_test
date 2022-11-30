@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "bldr"
+name = "bldr_test"
 version = "0.1.0"
 description = ""
 authors = ["Ethan Skowronski-Lutz <33399972+ethanmsl@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "bldr", from = "src"}]
+packages = [{include = "bldr_test", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
