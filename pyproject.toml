@@ -16,10 +16,26 @@ pyright = "^1.1.281"
 black = "^22.10.0"
 pytest = "^7.2.0"
 pdoc = "^12.3.0"
+isort = "^5.10.1"
+pytest-cov = "^4.0.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+# compatibility with Black formatter
+profile = "black"
+
+
+# [tool.pylint]
+# disable = [
+#     "R0903",  # Too few public methods
+# ]
+[tool.pylint.format]
+# line length to match Black formatter
+max-line-length = "88"
 
 
 [tool.pyright]
@@ -29,6 +45,7 @@ exclude = [".venv",
     "src/typestubs",
   "**/__pycache__"
 ]
+# utilizing the fact that we've set Poetry `virtualenv.in-project` to true
 venvPath = "."
 venv = ".venv"
 
@@ -39,6 +56,7 @@ reportMissingTypeStubs = true
 executionEnvironments = [
   { root = "src" }
 ]
+
 
 [tool.pytest.ini_options]
 # adds the following paths to pythonpath, specified relative to root dir

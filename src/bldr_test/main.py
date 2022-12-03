@@ -13,6 +13,8 @@ def write_randoms(num_to_write: int) -> list[float]:
 
 
 T = TypeVar("T")
+
+
 # ugh, won't let me use type variable because not using for enough constraint
 # I kinda get it, since it's not going to create specialized sub functions
 # but also seems to complain about 'Any'
