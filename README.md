@@ -1,4 +1,6 @@
 
+![example workflow](https://github.com/ethanmsl/bldr_test/actions/workflows/github-actions-demo.yml/badge.svg)
+
 
 This is the `README.md`.  It is being pulled into the markdown files by pdoc.
 
