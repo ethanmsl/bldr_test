@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+      - name: check python version
         run: python --version
       #----------------------------------------------
       #  -----  install & configure poetry  -----
@@ -26,6 +27,7 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
           installer-parallel: true
+      - name: check poetry version
         run: poetry --version
 
       #----------------------------------------------
@@ -37,6 +39,7 @@ jobs:
         with:
           path: .venv
           key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+      - name: report cache used
         run: echo 'Cache LOADED'
       #----------------------------------------------
       # install dependencies if cache does not exist
@@ -44,6 +47,7 @@ jobs:
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
+      - name: report no cache used
         run: echo 'poetry installed from scratch'
       #----------------------------------------------
       # install your root project, if required
