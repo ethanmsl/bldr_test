@@ -59,8 +59,17 @@ jobs:
       #----------------------------------------------
       - name: where are we
         run: pwd
-      - name: Run tests
-        run: |
-          source .venv/bin/activate
-          pytest tests/
-          coverage report
+      - name: activate .venv
+        run: source .venv/bin/activate
+      - name: isort
+        run: poetry run isort src/ tests/ --check-only --dif
+      - name: black
+        run: poetry run black src/ tests/ --check
+      - name: pylint
+        run: poetry run pylint src/ tests/
+      - name: pyright
+        run: poetry run pyright src/ tests/
+      - name: pytest_and_coverage
+        run: poetry run pytest --cov-report term-missing --cov-fail-under=80 --cov=src tests/
+      - name: poetry_check
+        run: poetry check
