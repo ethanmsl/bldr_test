@@ -1,5 +1,5 @@
 
-![test_badge](https://github.com/ethanmsl/bldr_test/actions/workflows/test-poet.yml/badge.svg)
+![tests_badge](https://github.com/ethanmsl/bldr_test/actions/workflows/test-poet.yml/badge.svg)
 
 
 This is the `README.md`.  It is being pulled into the markdown files by pdoc.
