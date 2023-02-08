@@ -4,6 +4,9 @@
 import random
 from typing import TypeVar
 
+import typer
+
+app = typer.Typer()
 random.seed(12)
 
 
@@ -33,6 +36,7 @@ def print_randoms(times_printed: int) -> int:
     return 0
 
 
+@app.command()
 def main() -> int:
     """main function"""
     returncode = print_randoms(10)
