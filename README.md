@@ -2,9 +2,25 @@
 ![tests_badge](https://github.com/ethanmsl/bldr_test/actions/workflows/test-poet.yml/badge.svg)
 
 
-This is the `README.md`.  It is being pulled into the markdown files by pdoc.  
+This is the `README.md`.  It is being pulled into the markdown files by pdoc. (or you're reading it else where :shrug:)
+ 
 [This is a link to the GitHub Pages site](https://ethanmsl.github.io/bldr_test/bldr_test.html) hosting the auto-generated documentation.
 
+
+This is a [link to the PyPi package](https://pypi.org/project/bldr-test/).
+Which, unfortunately, need to be generated for this test case as there seems to be a bug with the [TestPyPi](https://test.pypi.org/project/bldr-test/) package.
+
+Current version is run via an app name: `bldrtst`
+It merely prints a series of lines with random numbers (fixed seed) in them.
+
+
+
+
+
+
+
+
+---------------------------- old script version ----------------------
 **bold**  
 *italic*  
 ~~strikethrough~~  
