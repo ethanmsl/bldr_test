@@ -2,7 +2,7 @@
 ![tests_badge](https://github.com/ethanmsl/bldr_test/actions/workflows/test-poet.yml/badge.svg)
 
 
-This is the `README.md`.  It is being pulled into the markdown files by pdoc. (or you're reading it else where :shrug:)
+This is the `README.md`.  It is being pulled into the markdown files by pdoc. (or you're reading it elsewhere :shrug:)
  
 [This is a link to the GitHub Pages site](https://ethanmsl.github.io/bldr_test/bldr_test.html) hosting the auto-generated documentation.
 
